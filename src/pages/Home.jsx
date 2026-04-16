@@ -3,6 +3,7 @@ import { Box, Typography, Button, Container, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import { Link as RouterLink } from 'react-router-dom';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import DownloadIcon from '@mui/icons-material/Download';
 import profileImage from '../assets/simage.jpeg';
 
 const Home = () => {
@@ -23,12 +24,15 @@ const Home = () => {
             <Typography variant="body1" color="text.secondary" sx={{ mb: 4, maxWidth: '600px', fontSize: '1.1rem' }}>
               I’m a passionate software developer with a strong foundation in building responsive and user-friendly web applications. I specialize in modern technologies like React, JavaScript, and front-end frameworks, with a focus on creating clean, efficient, and scalable solutions.
             </Typography>
-            <Box sx={{ display: 'flex', gap: 2 }}>
+            <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
               <Button component={RouterLink} to="/projects" variant="contained" size="large" endIcon={<ArrowForwardIcon />}>
                 View Projects
               </Button>
               <Button component={RouterLink} to="/contact" variant="outlined" size="large">
                 Contact Me
+              </Button>
+              <Button href="/Shubhangi_Singh_Resume.pdf" target="_blank" download="Shubhangi_Resume.pdf" variant="contained" color="secondary" size="large" endIcon={<DownloadIcon />}>
+                Download Resume
               </Button>
             </Box>
           </Box>

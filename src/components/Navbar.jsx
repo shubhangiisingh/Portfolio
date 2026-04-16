@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Typography, IconButton, Button, Box } from '@mui/mater
 import { Link as RouterLink } from 'react-router-dom';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import DownloadIcon from '@mui/icons-material/Download';
 import { useTheme } from '@mui/material/styles';
 import { useColorMode } from '../theme/ThemeContext';
 
@@ -24,11 +25,23 @@ const Navbar = () => {
           <Button color="inherit" component={RouterLink} to="/projects">Projects</Button>
           <Button color="inherit" component={RouterLink} to="/experience">Experience</Button>
           <Button color="inherit" component={RouterLink} to="/certifications">Certifications</Button>
+          <Button color="inherit" component={RouterLink} to="/achievements">Achievements</Button>
           <Button color="inherit" component={RouterLink} to="/contact">Contact</Button>
         </Box>
         <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
           {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
         </IconButton>
+        <Button 
+          variant="contained" 
+          color="primary" 
+          endIcon={<DownloadIcon />} 
+          href="/Shubhangi_Singh_Resume.pdf" 
+          target="_blank" 
+          download="Shubhangi_Resume.pdf"
+          sx={{ ml: 2, display: { xs: 'none', sm: 'flex' } }}
+        >
+          Resume
+        </Button>
       </Toolbar>
     </AppBar>
   );
