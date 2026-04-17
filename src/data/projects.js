@@ -10,18 +10,18 @@ export const projects = [
     },
     {
         id: 2,
-        title: 'Task Management App',
-        description: 'A Kanban-style task management dashboard to organize workflow and enhance productivity.',
-        techStack: ['React', 'Redux', 'MUI v5', 'Firebase'],
-        githubLink: 'https://github.com',
-        liveDemoLink: 'https://demo.com',
+        title: 'Weather App',
+        description: 'Built a real-time Weather Dashboard using Next.js and Material UI, integrating OpenWeather API to display dynamic weather data and forecasts.',
+        techStack: ['Next', 'Material-UI', 'Open Weather API'],
+        githubLink: 'https://github.com/shubhangiisingh/Weather-app',
+        liveDemoLink: 'https://weather-app-one-xi-61.vercel.app?_vercel_share=wWgr2Hq430Y94F73wQV8nmnBjupd2OS5',
     },
-    {
-        id: 3,
-        title: 'Weather Dashboard',
-        description: 'Real-time weather tracking application pulling data from OpenWeatherAPI with dynamic visualizations.',
-        techStack: ['JavaScript', 'HTML5', 'CSS3', 'Framer Motion'],
-        githubLink: 'https://github.com',
-        liveDemoLink: 'https://demo.com',
-    }
+    // {
+    //     id: 3,
+    //     title: 'Weather Dashboard',
+    //     description: 'Real-time weather tracking application pulling data from OpenWeatherAPI with dynamic visualizations.',
+    //     techStack: ['JavaScript', 'HTML5', 'CSS3', 'Framer Motion'],
+    //     githubLink: 'https://github.com',
+    //     liveDemoLink: 'https://demo.com',
+    // }
 ];
