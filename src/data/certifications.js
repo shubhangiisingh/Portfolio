@@ -6,6 +6,7 @@ export const certifications = [
         date: '2025',
         link: '/bootcamp_project.pdf',
     },
+    
     {
         id: 2,
         title: 'Introduction to Artificial Intelligence',
