@@ -3,8 +3,8 @@ import { Container, Typography, Box, Grid, Chip } from '@mui/material';
 import SectionTitle from '../components/SectionTitle';
 
 const skills = [
-  'JavaScript (ES6+)', 'React', 'Node.js', 'Express', 'HTML5', 'CSS3', 
-  'Material UI (MUI)', 'Tailwind CSS', 'Git', 'Redux', 'MongoDB', 'Rest API', 'Vercel'
+  'Data Structures & Algo','C/C++','Python','JavaScript (ES6+)', 'React', 'Node.js', 'Express', 'HTML5', 'CSS3', 
+  'Material UI (MUI)', 'Tailwind CSS', 'Single Page Appliucation','VS Code','Antigravity','Jupyter Notebook','Git', 'Redux', 'MongoDB', 'Rest API', 'Vercel'
 ];
 
 const About = () => {
